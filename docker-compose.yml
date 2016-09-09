@@ -1,0 +1,8 @@
+ftp:
+  container_name: ftp-server
+  image: ftp
+  ports: ["20:20", "21:21", "22:22"]
+  restart: always
+  environment:
+    FTP_LOGIN: testuser
+    FTP_PASSWORD: testpassword
