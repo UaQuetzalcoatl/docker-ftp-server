@@ -17,4 +17,4 @@ else
     echo "Info: FTP_LOGIN environment or FTP_PASSWORD variable is NOT set, skipping adding a new user"
 fi
 
-proftpd -n
+service ssh start && proftpd -n 
